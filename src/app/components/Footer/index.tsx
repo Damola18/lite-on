@@ -2,8 +2,9 @@ import { JSX, SVGProps } from "react"
 
 const navigation = {
     main: [
-      { name: 'About', href: '#' },
-      { name: 'Ride', href: '#' },
+      { name: 'About', href: '/about' },
+      { name: 'Contact', href: '/contact' },
+      { name: 'Ride', href: '/ride' },
       { name: 'Partners', href: '#' },
     ],
     social: [
