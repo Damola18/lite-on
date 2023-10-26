@@ -2,8 +2,9 @@ import { JSX, SVGProps } from "react"
 
 const navigation = {
     main: [
-      { name: 'About', href: '#' },
-      { name: 'Ride', href: '#' },
+      { name: 'About', href: '/about' },
+      { name: 'Contact', href: '/contact' },
+      { name: 'Ride', href: '/ride' },
       { name: 'Partners', href: '#' },
     ],
     social: [
@@ -69,7 +70,7 @@ const navigation = {
             ))}
           </div>
           <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-            &copy; 2023 Litheon, Inc. All rights reserved.
+            &copy; 2023 Liteon, Inc. All rights reserved.
           </p>
         </div>
       </footer>
