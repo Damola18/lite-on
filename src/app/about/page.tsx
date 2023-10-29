@@ -138,7 +138,7 @@ export default function About() {
                 <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                   <div className="relative">
                     <Image
-                      src="https://res.cloudinary.com/dutcp8qkx/image/upload/v1697884918/Lite-on/battery-removebg-preview_ny00kb.png"
+                      src="https://res.cloudinary.com/dutcp8qkx/image/upload/v1697557882/liteon_jmrgyg.png"
                       alt=""
                      width={175}
                      height={120}
@@ -160,7 +160,7 @@ export default function About() {
                   </div>
                   <div className="relative">
                     <Image
-                       src="https://res.cloudinary.com/dutcp8qkx/image/upload/v1697884918/Lite-on/battery-removebg-preview_ny00kb.png" 
+                       src="https://res.cloudinary.com/dutcp8qkx/image/upload/v1697557882/liteon_jmrgyg.png" 
                       alt=""
                       width={175}
                      height={120}
@@ -172,7 +172,7 @@ export default function About() {
                 <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <div className="relative">
                     <Image
-                      src="https://res.cloudinary.com/dutcp8qkx/image/upload/v1697884918/Lite-on/battery-removebg-preview_ny00kb.png"
+                      src="https://res.cloudinary.com/dutcp8qkx/image/upload/v1697557882/liteon_jmrgyg.png"
                       alt=""
                       width={175}
                      height={120}
