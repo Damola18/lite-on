@@ -27,7 +27,7 @@ export default function Navbar() {
         aria-label="Global"
       >
         <div className="flex">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Liteon</span>
             <Image
               className="h-16 w-auto"
@@ -88,7 +88,7 @@ export default function Navbar() {
             variant: 'ghost',
             size: 'sm',
           })}>
-              <Button>Get Started</Button>
+              <Button className="bg-[#365821] text-white">Get Started</Button>
           </Link>
         </div>
 

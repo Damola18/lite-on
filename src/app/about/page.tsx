@@ -1,16 +1,5 @@
 import Image from "next/image"
-// import {
-//   Person
-// } from "@/app/assets/images/person.jpeg"
-// import {
-//   Code
-// } from "@/app/assets/images/code.jpeg"
-// import {
-//   Group
-// } from "@/app/assets/images/group.jpeg"
-// import {
-//   Lady
-// } from "@/app/assets/images/lady.jpeg"
+import type { Metadata } from 'next'
 
 import {
 
@@ -18,6 +7,14 @@ import {
   Fingerprint,
   LifeBuoyIcon
 } from "lucide-react"
+
+import {
+  Battery1,
+  Battery2,
+  Battery3,
+  Battery4
+} from "@/app/assets/images/"
+import Persons from "./persons"
 
 const supportLinks = [
   {
@@ -82,6 +79,9 @@ const values = [
   },
 ];
 
+export const metadata: Metadata = {
+  title: "Liteon | About"
+}
 export default function About() {
   return (
     <main className="isolate">
@@ -131,7 +131,17 @@ export default function About() {
                   We’re changing the way infrastructures are powered.
                 </h1>
                 <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                Liteon is revolutionizing the way infrastructures are powered, harnessing the limitless energy of the sun. Our mission is to provide clean, sustainable solutions that not only reduce costs but also significantly decrease carbon footprints, helping create a greener and more sustainable future for all. Our innovative approach ensures that businesses and communities can thrive while minimizing their environmental impact.
+                  Liteon is a <span className="font-bold text-[#365821]">climate technology company</span> dedicated to providing accessible and
+                  sustainable off-grid electrification solutions for <span className="font-bold text-[#365821]">residential and small-commercial businesses in
+                  urban Africa.</span>
+                  
+                  
+                </p>
+
+                <p className="relative mt-3 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                  Using swappable battery technologies, our goal
+                  is to replace fossil fuel gasoline generators with
+                  100% renewable backed Liteon Power Box
                 </p>
               </div>
               <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -150,7 +160,7 @@ export default function About() {
                 <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                   <div className="relative">
                     <Image
-                      src="https://res.cloudinary.com/dutcp8qkx/image/upload/v1697736657/Lite-on/man_ptrs4m.jpg"
+                      src={Battery1}
                       alt=""
                       width={175}
                      height={120}
@@ -160,7 +170,7 @@ export default function About() {
                   </div>
                   <div className="relative">
                     <Image
-                       src="https://res.cloudinary.com/dutcp8qkx/image/upload/v1697557882/liteon_jmrgyg.png" 
+                        src={Battery2}
                       alt=""
                       width={175}
                      height={120}
@@ -172,7 +182,7 @@ export default function About() {
                 <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <div className="relative">
                     <Image
-                      src="https://res.cloudinary.com/dutcp8qkx/image/upload/v1697557882/liteon_jmrgyg.png"
+                      src={Battery3}
                       alt=""
                       width={175}
                      height={120}
@@ -182,7 +192,7 @@ export default function About() {
                   </div>
                   <div className="relative">
                     <Image
-                      src="https://res.cloudinary.com/dutcp8qkx/image/upload/v1697890129/Lite-on/premium_photo-1671808063085-c307723bfa2f-removebg-preview_y2h5r7.png"
+                       src={Battery4}
                        alt=""
                        width={175}
                      height={120}
@@ -204,12 +214,12 @@ export default function About() {
           <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
             <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
               <p className="text-base leading-8 text-gray-600">
-              <span className ="font-bold">Enhanced Energy Access: </span> In numerous developing countries, households and small businesses still 
+              <span className ="font-bold text-[#365821]">Enhanced Energy Access: </span> In numerous developing countries, households and small businesses still 
               grapple with limited access to consistent power due to issues like grid congestion, peak demand, and inadequate energy supply. Embracing these innovative ideas will significantly increase energy access and promote the decentralization of the energy market
               </p>
               <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
                 <p>
-                <span className ="font-bold">Carbon Emission Reduction: </span>The domains of transportation and energy, which are major contributors to greenhouse gas emissions, predominantly rely on gasoline. While low-income communities and small businesses often prioritize affordable and sustainable energy sources, these ideas are not only aligned with countries&apos; efforts to achieve their Paris Agreement commitments and net-zero objectives but also contribute to the reduction of Disability-Adjusted Life Years (DALY). DALY accounts for accidents, diseases, and deaths linked to fossil fuel energy.
+                <span className ="font-bold text-[#365821]">Carbon Emission Reduction: </span>The domains of transportation and energy, which are major contributors to greenhouse gas emissions, predominantly rely on gasoline. While low-income communities and small businesses often prioritize affordable and sustainable energy sources, these ideas are not only aligned with countries&apos; efforts to achieve their Paris Agreement commitments and net-zero objectives but also contribute to the reduction of Disability-Adjusted Life Years (DALY). DALY accounts for accidents, diseases, and deaths linked to fossil fuel energy.
                 </p>
               </div>
             </div>
@@ -227,6 +237,8 @@ export default function About() {
           </div>
         </div>
       </div>
+      
+      <Persons/>
 
       {/* Image section */}
       {/* <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">

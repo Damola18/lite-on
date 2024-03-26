@@ -4,6 +4,7 @@ import {
   Fingerprint,
   LifeBuoyIcon
 } from "lucide-react"
+import type { Metadata } from 'next'
 
 const supportLinks = [
   {
@@ -29,6 +30,9 @@ const supportLinks = [
   },
 ]
 
+export const metadata: Metadata = {
+  title: "Liteon | Contact"
+}
 export default function Contact() {
   return (
     <div className="bg-white">
