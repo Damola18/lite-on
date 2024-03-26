@@ -21,7 +21,7 @@ const people:Person[] = [
       portfolio: "Climate, Finance and Policy",
       imageUrl: FounderImg,
       xUrl: '#',
-      linkedinUrl: '#',
+      linkedinUrl: 'https://www.linkedin.com/in/jideolutoke/',
     },
 
     {
@@ -32,7 +32,7 @@ const people:Person[] = [
         //   'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
         imageUrl: Champion,
         xUrl: '#',
-        linkedinUrl: '#',
+        linkedinUrl: 'https://www.linkedin.com/in/champion-o-a08010162/',
       },
 
       {
@@ -43,7 +43,7 @@ const people:Person[] = [
         //   'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
         imageUrl: Preston,
         xUrl: '#',
-        linkedinUrl: '#',
+        linkedinUrl: 'www.linkedin.com/in/preston-njapa/',
       },
   ]
   
@@ -69,14 +69,14 @@ const people:Person[] = [
                 <p className="text-base leading-7 text-gray-600">{person.role}</p>
                 <p className="text-base leading-7 text-gray-600">{person.portfolio}</p>
                 <ul role="list" className="mt-6 flex gap-x-6">
-                  <li>
+                  {/* <li>
                     <a href={person.xUrl} className="text-gray-400 hover:text-gray-500">
                       <span className="sr-only">X</span>
                       <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
                       </svg>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-500">
                       <span className="sr-only">LinkedIn</span>
